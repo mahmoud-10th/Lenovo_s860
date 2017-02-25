@@ -1,0 +1,1 @@
+/home/mahmoud/S860_ROW_KK_OpenSource/bsp/mediatek/platform/mt6582/kernel/core/include/mach/sync_write.h

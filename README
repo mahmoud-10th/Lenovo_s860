@@ -1,0 +1,32 @@
+Build Platform Packages (./platform folder):
+1. Get Android Open Source code;
+
+Branch: Android 4.4.4
+
+Sync code command: 
+repo init -u https://android.googlesource.com/platform/manifest.git -b android-4.4.4_r1
+repo sync
+
+Build command for Android Open Source code:
+source build/envsetup.sh
+lunch aosp_arm-user
+make
+
+2. Copy module that you want to build to original android open source;
+
+3. Build the module on Android Open Source code;
+
+=============================
+
+Build Kernel (in ./android folder):
+
+Command:
+PATH=${PATH}:/AOSP_Code/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/
+PATH=${PATH}:/home/mahmoud/S860_ROW_KK_OpenSource/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/
+export ARCH=arm
+./makeMtk phaeton_row n k ARCH=arm CROSS_COMPILE=arm-linux-androideabi-
+
+===========================
+
+
+Contact Lenovo support for information on obtaining Open Source code.

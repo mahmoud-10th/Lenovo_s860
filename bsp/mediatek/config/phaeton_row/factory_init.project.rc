@@ -1,0 +1,5 @@
+# for proximity sensor cali usage merge from avene-w --by lenovo huangdra 20130424 
+service nvram_proximity /system/bin/nvram_proximity	
+	user root	
+	oneshot	
+#for proximity sensor cali usage merge from avene-w --by lenovo huangdra 20130424 

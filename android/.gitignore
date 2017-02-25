@@ -1,0 +1,39 @@
+/out
+/kernel/out
+/bootable/bootloader/lk/build-*/
+/bootable/bootloader/lk/out
+/mediatek/misc/
+/mediatek/preloader/bin/
+/mediatek/preloader/out/
+/mediatek/preloader/preloader_*.bin
+/checkenv.log
+/makeMtk.ini
+/mediatek/frameworks/common/src/com/mediatek/common/featureoption/FeatureOption.java
+/mediatek/frameworks/common/src/com/mediatek/common/featureoption/IMEFeatureOption.java
+/remove_ptgen_autogen_files.pl
+
+
+
+# The following files are tracked but are should not tracked. Most of them are
+# generated intermediate files. To ignore these files you can:
+#
+#   git update-index --assume-nochange <file-list>
+#
+# Use this command carefuly and you can find more useage in the man page.
+#
+# Knonw tracked generated files:
+#
+#	auto_sync_android.log
+#	mediatek/build/tools/SignTool/SignTool_MTK
+#	mediatek/build/tools/SignTool/inc/build_info.h
+#	mediatek/build/tools/SignTool/obj/SignLib.a
+#	mediatek/cgen/.temp_APDB_MT6592_S01_ALPS.JB9.MP_
+#	mediatek/cgen/APDB_MT6592_S01_ALPS.JB9.MP_
+#	mediatek/cgen/_APDB_MT6592_S01_ALPS.JB9.MP_.check
+#	mediatek/cgen/apeditor/app_temp_db
+#	mediatek/external/boot_logo_updater/custom
+#	mediatek/external/combo_tool/cfg_folder
+#	mediatek/external/combo_tool/patch_folder
+#	mediatek/external/combo_tool/src/custom
+#	mediatek/external/vtmal/custom/common
+#	mediatek/preloader/system.map

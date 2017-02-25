@@ -1,0 +1,45 @@
+#
+# XLOG service configuration
+#
+service xlogboot /system/bin/xlog boot
+    user root
+    oneshot
+    disabled
+
+service xlogdebugchanged /system/bin/xlog debug-changed
+    user root
+    oneshot
+    disabled
+
+on property:persist.mtk.aee.mode=1
+    start xlogdebugchanged
+
+on property:persist.mtk.aee.mode=2
+    start xlogdebugchanged
+
+on property:persist.mtk.aee.mode=3
+    start xlogdebugchanged
+
+on property:persist.mtk.aee.mode=4
+    start xlogdebugchanged
+
+on property:init.svc.adbd=running
+    start xlogdebugchanged
+
+on property:init.svc.adbd=stopped
+    start xlogdebugchanged
+
+##Lenovo-sw wuzb1 2014-04-04 enable to start reportroot
+on property:sys.reportroot.config=1
+    start reportroot
+
+service reportroot /sbin/reportroot
+    user root
+    disabled
+    oneshot
+
+#Lenovo-sw wuzb1 2014-05-15 enable qreboot
+service qreboot /system/bin/qreboot
+    user root
+    disabled
+    oneshot
