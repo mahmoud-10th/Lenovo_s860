@@ -1,0 +1,17 @@
+how to get dmesg logs	
+
+How to get kernel logs from android
+
+Kernel Logs are the android kernel messages, which can help us to provide logging for different parts of the system.
+There is various method to get kernel logging information, below i mentioned mostly used method:
+Get the kernel messages
+
+< adb shell dmesg >
+< adb shell cat /proc/kmsg >
+
+Both above command do the same thing, and we can get messages to log from user space.
+If you wants to redirect the logs into some other file then you can use the below method:
+Redirecting kernel logs:
+
+< For Windows:-> adb shell cat /proc/kmsg > kernelmsg.txt >
+< For Linux:--> adb shell cat /proc/kmsg | tee -a kernelmsg.txt >
