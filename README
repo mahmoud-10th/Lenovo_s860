@@ -22,11 +22,21 @@ Build Kernel (in ./android folder):
 
 Command:
 PATH=${PATH}:/AOSP_Code/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/
-PATH=${PATH}:/home/mahmoud/S860_ROW_KK_OpenSource/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/
+PATH=${PATH}:~/S860_ROW_KK_OpenSource/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/
 export ARCH=arm
 ./makeMtk phaeton_row n k ARCH=arm CROSS_COMPILE=arm-linux-androideabi-
+
+=========================== OR
+
+export ARCH=arm && export ARCH_MTK_PLATFORM=mt6582 && export CROSS_COMPILE=/home/mahmoud/prebuilts/gcc/linux-x86/arm/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8/bin/arm-linux-androideabi- && export CCompile=$CROSS_COMPILE
+
+TARGET_PRODUCT=phaeton_row MTK_ROOT_CUSTOM=../mediatek/custom/ MTK_PATH_SOURCE=../mediatek/kernel/ MTK_PATH_PLATFORM=../mediatek/platform/mt6582/kernel/ ARCH_MTK_PLATFORM=mt6582 
+
+./makeMtk phaeton_row n k
 
 ===========================
 
 
-Contact Lenovo support for information on obtaining Open Source code.
+Don't Contact Lenovo any way for information or obtaining Open Source code.
+they will not answer
+think twice before you buy any device 
